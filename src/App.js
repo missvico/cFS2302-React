@@ -3,16 +3,21 @@ import './App.css';
 import Landing from './views/Landing';
 import Counter from './views/Counter';
 import ToDoList from './views/ToDoList';
+import SendComments from './views/SendComments';
+import StarWarsCharacters from './views/StarWarsCharacters';
+
 
 function App() {
   const name = "Juan"
 
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <Landing name={name}/> */}
+      <header>
+        <Landing name={name}/>
         {/* <Counter/> */}
-        <ToDoList/>
+        {/* <ToDoList/> */}
+        {/* <SendComments/> */}
+        {/* <StarWarsCharacters/> */}
       </header>
     </div>
   );
