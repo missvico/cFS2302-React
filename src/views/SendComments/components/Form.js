@@ -50,7 +50,7 @@ function Form({handleChange, handleSubmit, userData}) {
       <div className="mb-3 form-check">
         <input checked={userData.updates} type="checkbox" className="form-check-input" id="updates" onChange={handleChange} />
         <label className="form-check-label" htmlFor="updates">
-          I wish to receive updates
+          I want to receive updates
         </label>
       </div>
       <button type="submit" className="btn btn-primary">

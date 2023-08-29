@@ -11,6 +11,7 @@ function ToDoList(){
     }
 
     const handleClick = function(event){
+        event.preventDefault()
         setTasks([...tasks, inputTask]) //spread operator
         setInputTask("")
     }
@@ -21,9 +22,9 @@ function ToDoList(){
         <section>
             <h1>To Do List</h1>
             <AddTask handleChange={handleChange} handleClick={handleClick} inputTask={inputTask}/>
-            <ul>
+            <ul className="list-group">
                 {
-                    tasks.map(task => <Task task={task}/>)
+                    tasks.map((task,index) => <Task task={task} index={index}/>)
                 }
             </ul>
         </section>
